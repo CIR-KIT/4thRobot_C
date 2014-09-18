@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/Gim30/gim30.c
+stdio.h
+-
+stdlib.h
+-
+termios.h
+-
+unistd.h
+-
+fcntl.h
+-
+sys/ioctl.h
+-
+gim30.h
+/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/Gim30/gim30.h
+
+/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/Gim30/gim30.h
+

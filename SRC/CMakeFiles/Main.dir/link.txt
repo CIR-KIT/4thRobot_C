@@ -1,0 +1,1 @@
+/usr/bin/cc  -O3 -DNDEBUG    CMakeFiles/Main.dir/main.c.o  -o Main -rdynamic Gim30/libGim30.a 

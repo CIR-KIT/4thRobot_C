@@ -1,0 +1,2 @@
+/usr/bin/ar cr libGim30.a  CMakeFiles/Gim30.dir/gim30.c.o
+/usr/bin/ranlib libGim30.a

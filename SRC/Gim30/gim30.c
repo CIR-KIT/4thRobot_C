@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <termios.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/ioctl.h>
+
+#include "gim30.h"
+
+//for debug
+#define printLOG( msg ) fprintf(stderr,"mesg : %s\nfile : %s\nline : %d\n",msg,__FILE__,__LINE__)
+
+//Baudrate
+#define BAUDRATE B115200
+//Serial Port path
+#define PORT "/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0"
+
+//File Discripter for Gim30
+int GIMfd;
+
+//Old & New serial settings for Gim30
+struct termios GIMoldtio, GIMnewtio;
+
+int SetGim30(void)
+{
+  //Serial open
+  if( (GIMfd = open(PORT, O_RDWR) ) < 0){
+    printLOG("Serial Open Gim30");
+    return 1;
+  }
+
+  //Get old serial settings of Arduino
+  ioctl(GIMfd, TCGETS, &GIMoldtio);
+  //Copy old to new 
+  GIMnewtio = GIMoldtio;
+
+  //New serial settings of Arduino
+  GIMnewtio.c_cflag = (BAUDRATE | CS8 | CREAD | CLOCAL);
+  GIMnewtio.c_iflag = (IGNPAR | ICRNL);
+  GIMnewtio.c_oflag = 0;
+  GIMnewtio.c_lflag = ~ICANON;
+
+  //Set new serial settings of Arduino
+  ioctl(GIMfd, TCSETS, &GIMnewtio);
+  
+  return 0;
+}
+
+void CloseGim30(void)
+{
+  close(GIMfd);
+}
+
+int SendCom2Gim30(const char *command)
+{
+  while(write(GIMfd, command, sizeof(command)) != sizeof(command));
+  return 0;
+}
+
+int GetComFromGim30(char *command)
+{
+  int i, tmp;
+
+  for(i=0; i<GIM30_DATASIZE; i+=tmp)
+    tmp = read(GIMfd, &command[i], GIM30_DATASIZE);
+ 
+  return 0;
+}
