@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/Arduino/arduino.c
+stdio.h
+-
+stdlib.h
+-
+termios.h
+-
+unistd.h
+-
+fcntl.h
+-
+sys/ioctl.h
+-
+arduino.h
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/Arduino/arduino.h
+
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/Arduino/arduino.h
+

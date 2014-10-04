@@ -1,1 +1,1 @@
-/usr/bin/cc  -O3 -DNDEBUG    CMakeFiles/main.dir/main.c.o  -o main -rdynamic Gim30/libGim30.a 
+/usr/bin/cc      CMakeFiles/main.dir/main.c.o  -o main -rdynamic Gim30/libGim30.a Arduino/libArduino.a Control/libControl.a 

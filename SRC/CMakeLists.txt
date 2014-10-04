@@ -11,11 +11,13 @@ set(CMAKE_BUILD_TYPE Release)
 project(4thRobot)
 # リンクライブラリの追加
 add_subdirectory(Gim30)
+add_subdirectory(Arduino)
+add_subdirectory(Control)
 
 # Mainビルド
 add_executable (main main.c)
 # ターゲットリンクライブラリ
-target_link_libraries(main Gim30)
+target_link_libraries(main Gim30 Arduino Control)
 
 
 

@@ -1,0 +1,2 @@
+/usr/bin/ar cr libArduino.a  CMakeFiles/Arduino.dir/arduino.c.o
+/usr/bin/ranlib libArduino.a

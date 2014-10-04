@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC
+CMAKE_SOURCE_DIR = /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC
+CMAKE_BINARY_DIR = /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/CMakeFiles /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/CMakeFiles /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +124,32 @@ Gim30/fast:
 	$(MAKE) -f Gim30/CMakeFiles/Gim30.dir/build.make Gim30/CMakeFiles/Gim30.dir/build
 .PHONY : Gim30/fast
 
+#=============================================================================
+# Target rules for targets named Arduino
+
+# Build rule for target.
+Arduino: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Arduino
+.PHONY : Arduino
+
+# fast build rule for target.
+Arduino/fast:
+	$(MAKE) -f Arduino/CMakeFiles/Arduino.dir/build.make Arduino/CMakeFiles/Arduino.dir/build
+.PHONY : Arduino/fast
+
+#=============================================================================
+# Target rules for targets named Control
+
+# Build rule for target.
+Control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Control
+.PHONY : Control
+
+# fast build rule for target.
+Control/fast:
+	$(MAKE) -f Control/CMakeFiles/Control.dir/build.make Control/CMakeFiles/Control.dir/build
+.PHONY : Control/fast
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -158,6 +184,8 @@ help:
 	@echo "... main"
 	@echo "... rebuild_cache"
 	@echo "... Gim30"
+	@echo "... Arduino"
+	@echo "... Control"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

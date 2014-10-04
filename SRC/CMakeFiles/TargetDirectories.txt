@@ -1,2 +1,4 @@
-/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/Gim30/CMakeFiles/Gim30.dir
-/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/CMakeFiles/main.dir
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/Arduino/CMakeFiles/Arduino.dir
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/Control/CMakeFiles/Control.dir
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/Gim30/CMakeFiles/Gim30.dir
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/CMakeFiles/main.dir

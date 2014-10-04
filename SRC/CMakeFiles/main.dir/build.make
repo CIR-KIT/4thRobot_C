@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC
+CMAKE_SOURCE_DIR = /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC
+CMAKE_BINARY_DIR = /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/main.dir/flags.make
 
 CMakeFiles/main.dir/main.c.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.c.o: main.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/main.dir/main.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/main.dir/main.c.o   -c /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/main.c
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/main.dir/main.c.o   -c /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/main.c
 
 CMakeFiles/main.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/main.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/main.c > CMakeFiles/main.dir/main.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/main.c > CMakeFiles/main.dir/main.c.i
 
 CMakeFiles/main.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/main.c -o CMakeFiles/main.dir/main.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/main.c -o CMakeFiles/main.dir/main.c.s
 
 CMakeFiles/main.dir/main.c.o.requires:
 .PHONY : CMakeFiles/main.dir/main.c.o.requires
@@ -82,6 +82,8 @@ main_EXTERNAL_OBJECTS =
 main: CMakeFiles/main.dir/main.c.o
 main: CMakeFiles/main.dir/build.make
 main: Gim30/libGim30.a
+main: Arduino/libArduino.a
+main: Control/libControl.a
 main: CMakeFiles/main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
@@ -98,6 +100,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC /home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC /home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

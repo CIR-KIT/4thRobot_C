@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/Gim30/gim30.c" "/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/Gim30/CMakeFiles/Gim30.dir/gim30.c.o"
+  "/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/Gim30/gim30.c" "/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/Gim30/CMakeFiles/Gim30.dir/gim30.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

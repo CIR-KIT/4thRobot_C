@@ -6,17 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/./Gim30/gim30.h
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/./Arduino/arduino.h
 
-/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/main.c
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/./Control/control.h
+
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/./Gim30/gim30.h
+
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/main.c
 main.h
-/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/main.h
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/main.h
 unistd.h
 -
 stdio.h
 -
+stdlib.h
+-
 
-/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/main.h
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/main.h
 ./Gim30/gim30.h
-/home/cir-kit/Documents/CIR-KIT/Robot/2014/4thRobot/SRC/./Gim30/gim30.h
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/./Gim30/gim30.h
+./Arduino/arduino.h
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/./Arduino/arduino.h
+./Control/control.h
+/home/ryodo/Documents/Kyutech/CIR-KIT/Robot/4thRobot/SRC/./Control/control.h
 
